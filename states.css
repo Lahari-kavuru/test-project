@@ -1,0 +1,135 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content section */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style individual place cards */
+.place-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Style place titles */
+.place-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Style place descriptions */
+.place-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Style the Explore button */
+.place-card .explore-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.place-card .explore-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the back button */
+.back-button {
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #134153; /* Light blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #2b74b0; /* Darker blue background color on hover */
+}
+
+/* Apply background styling to New York page */
+body {
+    background-image: url("https://images.unsplash.com/photo-1607131167922-d876b5d2aa7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kJTIwdG91cmlzbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 18px;
+    /* You can adjust the font size as needed */
+    color: #555;
+    /* You can set the text color to your preference */
+    margin-top: 20px;
+    /* Add margin for spacing from the header */
+}
+
+.explore-button {
+    background-color: #87CEEB; /* Light blue background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    margin-top: 10px;
+}
+
+/* Style the Explore New York button on hover */
+.explore-button:hover {
+    background-color: #4682B4; /* Darker blue background color on hover */
+}

@@ -1,0 +1,162 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Create a container for the places */
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style for each place card */
+.place-card {
+    width: calc(33.33% - 20px);
+    /* Adjust the width as needed */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    /* Adjust the maximum width to control card size */
+    /*width: 100%;*/
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style for place images */
+.place-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for place details */
+.place-details {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.place-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.place-description {
+    font-size: 1.2em;
+}
+
+/* CSS for the place cards */
+.place-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.place-image img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.place-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.place-description {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .place-card {
+        margin: 10px;
+    }
+}
+
+/* CSS for centering text */
+.center-text {
+    text-align: center;
+    font-size: 18px;
+    /* You can adjust the font size as needed */
+    color: #555;
+    /* You can set the text color to your preference */
+    margin-top: 20px;
+    /* Add margin for spacing from the header */
+}
+
+/* CSS to set the background image */
+body {
+    background-image: url("https://images.unsplash.com/photo-1607131167922-d876b5d2aa7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kJTIwdG91cmlzbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    /* Replace with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Optional: Keep the background fixed while scrolling */
+}
+
+/* Style the Explore New York button-like element */
+.explore-button {
+    background-color: #87CEEB; /* Light blue background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    margin-top: 10px;
+}
+
+/* Style the Explore New York button on hover */
+.explore-button:hover {
+    background-color: #4682B4; /* Darker blue background color on hover */
+}
+
+.place-details {
+    /* Add margin or padding as needed */
+    margin-bottom: 20px; /* Example: Add margin below the text container */
+}
+
+/* Style for Back button */
+.back-button {
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #134153; /* Light blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #2b74b0; /* Darker blue background color on hover */
+}

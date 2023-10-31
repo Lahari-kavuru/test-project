@@ -1,0 +1,322 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Apply styles to the main content section with the tourism background */
+.main {
+    position: relative;
+}
+
+.tourism-background {
+    position: relative;
+    background-image: url("images/home_screen_background_img.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0px;
+    height: 72.8vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay to improve readability */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+}
+
+.search-container button[type="submit"] {
+    padding: 10px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+    width: 40%;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+/* Style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown toggle button */
+.dropbtn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    width: 150%;
+    font-size: 1em;
+    align-content: center;
+    margin-right: 80px;
+    margin-left: -55px;
+    /* Adjust font size as needed */
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    /* Set a maximum height for the dropdown */
+    overflow-y: auto;
+}
+
+/* Style dropdown content links */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    /* Adjust font size as needed */
+    color: #333;
+}
+
+/* Add hover effect to dropdown content links */
+.dropdown-content a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn i {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+/* Add margin to create space between the two dropdowns */
+.search-container>div {
+    margin-top: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-image: url("https://images.unsplash.com/photo-1619120238346-978e07731e77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D&w=1000&q=80");
+    height: 50vh;
+    background-size: cover;
+}
+
+.tourism-card {
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 5px;
+}
+
+.button {
+    color: white;
+    background-color: #25b1cc;
+    width: 138px;
+    height: 36px;
+    border-width: 0px;
+    border-radius: 20px;
+}
+
+.main-heading {
+    font-family: "Roboto";
+}
+
+.paragraph {
+    font-family: "Roboto";
+}
+
+.favourite-places-bg-container {
+    background-image: url("https://images.pexels.com/photos/1450340/pexels-photo-1450340.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-1450340.jpg&fm=jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.favourite-places-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.favourite-place-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+.favourite-place-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.favourite-place-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.favourite-place-card-image {
+    width: 80px;
+    height: 100px;
+}
+
+.favourite-place-card-text-container {
+    margin-right: 15px;
+}
+
+.detailed-view-bg-container {
+    background-image: url("https://images.unsplash.com/photo-1619120238346-978e07731e77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D&w=1000&q=80");
+    height: 100vh;
+    background-size: cover;
+}
+
+.detailed-view-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.detailed-view-card-container {
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 24px;
+}
+
+.detailed-view-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.detailed-view-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.detailed-view-card-text-container {
+    padding: 16px;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem; }
+    /* Adjust margin to bring it closer */
+
+
+/*.search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+}*/
+
+/*#search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-box::placeholder {
+    color: #ccc; /* Set the color of the placeholder text} 
+
+.search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+}
+
+/* Hover effect for the button 
+.search-button:hover {
+    background-color: #0056b3;
+}
+*/
